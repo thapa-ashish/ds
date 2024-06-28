@@ -42,11 +42,40 @@ class MergeStringsAlt {
 
     public static void main(String args[]){
 
-        String word1 = "abc";
-        String word2 = "pqrs";
+        String word1 = "abcdefghi";
+        String word2 = "pqrst";
+
+        String[] word1Array = word1.split("");
+        String[] word2Array = word2.split("");
+
+        String[] resultArray = new String[word1.length() + word2.length()];
+        int i = 0;
+        int j = 0;
+        int index = 0;
+
+        while(i < word1.length() || j < word2.length()){
+            if(i < word1.length()){
+                resultArray[index] = word1Array[i];
+                index++;
+            }
+            if(j< word2.length()){
+                resultArray[index] = word2Array[j];
+                index++;
+            }
+            i++;
+            j++;
+
+        }
+     
+
+    for(int k=0; k<resultArray.length; k++){
+        System.out.println(resultArray[k]);
+    }        
 
 
         
+
+    
 
     }
 }
