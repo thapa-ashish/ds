@@ -12,13 +12,13 @@ public class ReverseInteger {
          *  
          * x = x/ 10
          *  
-         * 
+         * 15789
+         * rem = 9  
+         * rev = 0 * 10 +  9
          *  
-         *  
-         *  
-         * 
-         * 
-         * 
+         * 1578
+         * rem = 8
+         * rev = 9 * 10 + 8  = 98
          * 
          */
 
@@ -33,7 +33,7 @@ public class ReverseInteger {
 
         }
 
-        System.out.println(rev);
+        System.out.println(rev); 
     }
     
 }
